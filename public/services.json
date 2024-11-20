@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Career Counseling Sessions",
+    "image": "../../src/assets/S1-2.jpeg",
+    "category": "Online",
+    "price": "$50",
+    "counselor": "Dr. Emily Carter",
+    "rating": 4.8,
+    "description": "Our personalized career counseling sessions aim to help individuals find clarity in their professional paths. Whether you’re a student exploring future options, a working professional seeking a change, or someone returning to the workforce, this one-on-one session will provide expert advice tailored to your unique situation. The session focuses on identifying your strengths, weaknesses, interests, and career aspirations while providing guidance on choosing the right industry, role, or academic program. You’ll also receive insights into job market trends, skill-building strategies, and effective career planning techniques. Dr. Emily Carter, an experienced career counselor, will work with you to develop a step-by-step roadmap, helping you make confident and informed decisions. This session empowers you with tools to set achievable career goals, enhancing your personal and professional growth. Whether transitioning careers or starting fresh, our career counseling sessions equip you to navigate the challenges of today’s dynamic job market confidently."
+  },
+  {
+    "id": 2,
+    "name": "Resume Review",
+    "image": "../../src/assets/S2.jpeg",
+    "category": "Offline",
+    "price": "$30",
+    "counselor": "Mr. John Davis",
+    "rating": 4.6,
+    "description": "Your resume is often the first impression you make on potential employers, and ensuring it reflects your skills effectively is crucial. Our Resume Review service provides professional feedback from experienced career experts like Mr. John Davis. During this service, we will analyze your resume's layout, content, and formatting, offering actionable suggestions for improvement. Learn how to highlight your achievements, use keywords for ATS optimization, and showcase your expertise in a way that grabs recruiters' attention. Whether you're a recent graduate or a seasoned professional, this service ensures your resume aligns with industry standards. The process also includes tips for tailoring your resume to specific job postings, enabling you to make a lasting impact during job applications. With a polished resume, you can stand out in the competitive job market and advance confidently toward your desired role."
+  },
+  {
+    "id": 3,
+    "name": "Skill Development Workshop",
+    "image": "../../src/assets/S3.jpeg",
+    "category": "Group Session",
+    "price": "$100",
+    "counselor": "Ms. Sarah Johnson",
+    "rating": 5.0,
+    "description": "Our Skill Development Workshop is designed to equip participants with the practical skills needed to excel in today’s competitive job market. This intensive group session covers various topics, including communication skills, teamwork, leadership, and technical abilities relevant to your field. Led by industry expert Ms. Sarah Johnson, the workshop combines theoretical knowledge with hands-on activities to ensure effective learning. Participants will engage in real-world simulations, collaborative projects, and case studies to enhance their understanding. You’ll also receive personalized feedback and guidance to address individual areas of improvement. The workshop caters to professionals at all career stages, offering insights into emerging trends and essential skills for career advancement. By the end of the session, you'll gain newfound confidence and the ability to apply these skills in your workplace, ensuring your professional growth and success."
+  },
+  {
+    "id": 4,
+    "name": "Mock Interviews",
+    "image": "../../src/assets/S4.jpeg",
+    "category": "Online",
+    "price": "$25",
+    "counselor": "Mr. Adam Smith",
+    "rating": 4.7,
+    "description": "Prepare for your next job interview with our Mock Interview service, designed to simulate real-world interview scenarios. This online session allows you to practice answering common and challenging interview questions with an experienced coach, Mr. Adam Smith. Learn how to articulate your skills, address weaknesses confidently, and make a strong impression on potential employers. The session includes personalized feedback on your communication style, body language, and presentation. We also cover tips for virtual interviews, helping you build confidence in remote job discussions. By addressing areas of improvement and honing your responses, our mock interviews ensure you are well-prepared to succeed in the actual interview. Ideal for job seekers at any stage, this service helps build the skills needed to leave a lasting impression on recruiters."
+  },
+  {
+    "id": 5,
+    "name": "Leadership Training",
+    "image": "../../src/assets/S5.jpeg",
+    "category": "Offline",
+    "price": "$120",
+    "counselor": "Dr. Laura Green",
+    "rating": 4.9,
+    "description": "Our Leadership Training program is a comprehensive course designed to help individuals enhance their leadership skills and take on managerial roles confidently. Led by Dr. Laura Green, this program covers a wide range of topics, including team building, conflict resolution, strategic decision-making, and effective communication. Participants will learn to develop their leadership style, motivate teams, and navigate challenges within organizations. The training involves case studies, role-playing activities, and group discussions to foster practical understanding. Tailored for professionals at various career stages, this program is perfect for those aiming to refine their skills or prepare for leadership roles. By the end of the training, you’ll have the tools and confidence to lead teams effectively and drive success in your workplace."
+  },
+  {
+    "id": 6,
+    "name": "Time Management Strategies",
+    "image": "../../src/assets/S6.jpeg",
+    "category": "Online",
+    "price": "$20",
+    "counselor": "Mr. Mark Brown",
+    "rating": 4.5,
+    "description": "Time is one of the most valuable resources, and managing it effectively can significantly impact your productivity and success. Our Time Management Strategies session focuses on equipping you with tools and techniques to organize tasks, set priorities, and avoid procrastination. Led by Mr. Mark Brown, this session includes strategies such as the Pomodoro Technique, Eisenhower Matrix, and time-blocking methods. You’ll learn how to identify time-wasters, allocate resources efficiently, and maintain a healthy work-life balance. Ideal for busy professionals and students alike, this session provides actionable insights to optimize your daily schedule, boost productivity, and achieve your goals."
+  }
+]
