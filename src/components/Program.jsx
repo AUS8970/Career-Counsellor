@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet";
 
 const Program = () => {
   return (
     <div className="program opacity-60">
+      <Helmet>
+        <title> Our Program </title>
+      </Helmet>
       <h2 className="text-6xl font-extrabold font-font text-white"> Career Counselling Program </h2>
       <p> By Programming Hero Team </p>
       <button className=""> Enroll Now </button>

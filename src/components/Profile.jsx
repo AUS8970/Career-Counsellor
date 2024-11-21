@@ -35,6 +35,9 @@ const Profile = () => {
 
   return (
     <div className="">
+      <Helmet>
+        <title> My Profile </title>
+      </Helmet>
       <div className="container mx-auto mt-10 p-6 bg-white rounded-md shadow-lg mb-10">
         <h1 className="text-2xl font-bold mb-4 text-center"> My Profile </h1>
         <div className="flex flex-col items-center gap-6">

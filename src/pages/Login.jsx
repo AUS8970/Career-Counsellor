@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../firebase/firebase.init";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const { userLogin, setUser, logInWithGoogle, logInWithGithub } = useContext(AuthContext);
@@ -69,6 +70,9 @@ const Login = () => {
 
   return (
     <div className="">
+      <Helmet>
+        <title> Login </title>
+      </Helmet>
       <div className="min-h-screen flex justify-center items-center">
         <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
           <h3 class="text-gray-800 text-3xl text-center font-bold"> Log in</h3>

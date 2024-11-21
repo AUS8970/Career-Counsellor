@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { RiAccountCircleFill } from "react-icons/ri";
+import { Helmet } from "react-helmet";
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -45,8 +46,10 @@ const ServiceDetails = () => {
 
   return (
     <div className="">
-      <div className="">
-        <div className="p-8">
+      <Helmet>
+        <title> {service.name} || Service details </title>
+      </Helmet>
+      <div className="p-8">
           <div className="container mx-auto">
             <div className="">
               <h1 className="text-3xl font-bold mb-7 text-center">{service.name}</h1>
@@ -67,9 +70,9 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-        </div>
-        <hr className="" />
-        <div className="bg-slate-50 pt-6 pb-10">
+      </div>
+      <hr className="" />
+      <div className="bg-slate-50 pt-6 pb-10">
           <div className="container mx-auto flex flex-col md:flex-row gap-6">
             <div className="mt-6 w-full md:w-1/2">
               <h2 className="text-xl font-semibold mb-4"> Comments </h2>
@@ -105,7 +108,6 @@ const ServiceDetails = () => {
               )}
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

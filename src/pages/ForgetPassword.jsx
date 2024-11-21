@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { sendPasswordResetEmail, getAuth } from "firebase/auth";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const ForgetPassword = () => {
   const [email, setEmail] = useState(localStorage.getItem("email") || "");
@@ -27,6 +28,9 @@ const ForgetPassword = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <Helmet>
+        <title> Forget Password </title>
+      </Helmet>
       <div className="bg-white p-8 shadow-md rounded-md w-full max-w-md">
         <h1 className="text-2xl font-bold mb-4 text-center">Reset Password</h1>
         <form onSubmit={(e) => e.preventDefault()}>
