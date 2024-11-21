@@ -1,7 +1,15 @@
-# Career Counseling Website
+# Career Counsellor Website
 
-You are here to develop a robust career counseling website that provides services to  users seeking career guidance. 
-For this project, will develop a Career Counseling Website designed to guide users on their career paths. The goal is to create a seamless, intuitive platform that offers personalized career advice, guidance, and resources to users seeking to make informed decisions about their professional futures. The website will be built using React, React Router, and Firebase for handling routing, user authentication, and data management.
+A professional Career counseling platform designed to help users with career guidance, resume building, skill development, and much more. The platform offers secure authentication, personalized services, and a seamless user experience.
 
-## Live Link
-[Career Counseling Website](https://ph-b10-assignment-9.netlify.app/)
+## Live Site URL
+
+[Visit the Career Counsellor Website](https://career-counseling-websit-aus.web.app/)
+
+## Features and Characteristics
+
+- **Professional Services**: Access a wide range of counseling services, including career guidance, mock interviews, and skill workshops.
+- **User Authentication**: Secure login and registration using Firebase Authentication.
+- **Dynamic User Profiles**: Users can update their profiles with photos and display names.
+- **Responsive Design**: The website adapts perfectly across all devices.
+- **Rich Content**: Includes impactful blogs, testimonials, and success stories.
