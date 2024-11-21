@@ -4,6 +4,7 @@ import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 import Navbar from "./Navber";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 
 const Profile = () => {
   const { user, setUser } = useContext(AuthContext);

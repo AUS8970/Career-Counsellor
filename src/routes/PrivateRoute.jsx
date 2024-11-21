@@ -6,17 +6,17 @@ const PrivateRouter = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
   const location = useLocation();
 
-  if (user && user?.email) {
-    return children;
-  };
-
   if (loading) {
     return <div className="flex min-h-screen justify-center items-center">
       <span className="loading loading-bars loading-lg"></span>
     </div>
   };
 
-  return <Navigate state={location.pathname} to="/login"></Navigate>;
+  if (!user || !user.email) {
+    return <Navigate to="/login" state={{ from: location }} replace />;
+  }
+
+  return children;
 };
 
 export default PrivateRouter;

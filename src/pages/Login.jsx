@@ -15,6 +15,8 @@ const Login = () => {
   const navigate = useNavigate();
   const emailRef = useRef();
 
+  const from = location.state?.from?.pathname || "/";
+
   const handleErrorMessage = (code) => {
     switch (code) {
       case "auth/user-not-found":
@@ -30,18 +32,18 @@ const Login = () => {
 
   const handleGoogleSignIn = () => {
     logInWithGoogle()
-    .then(result => {
-      console.log(result.user);
-      navigate('/');
-    })
-    .catch(error => console.log('ERROR', error.message))
-  }
+      .then((result) => {
+        console.log(result.user);
+        navigate(from, { replace: true });
+      })
+      .catch((error) => console.log("ERROR", error.message));
+  };
 
   const handleGithubSignIn = () => {
     logInWithGithub()
     .then(result => {
       console.log(result.user);
-      navigate('/');
+      navigate(from, { replace: true });
     })
     .catch(error => console.log('ERROR', error.message))
   }
@@ -51,12 +53,11 @@ const Login = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password)
     userLogin(email, password)
     .then((result) => {
       const user = result.user;
       setUser(user);
-      navigate(location?.state ? location.state : "/");
+      navigate(from, { replace: true });
     })
     .catch((err) => {
       setError(handleErrorMessage(err.code));

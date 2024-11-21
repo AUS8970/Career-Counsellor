@@ -20,27 +20,33 @@ const AuthProvider = ({ children }) => {
 
   const logInWithGoogle = () => {
     return signInWithPopup(auth, googleProvider)
-    // .then((result) => {
-    //   toast.success("Logged in with Google!");
-    //   return result;
-    // }) .catch((error) => {
-    //   toast.error("Failed to log in with Google: " + error.message);
-    // });
-  }
-
+      .then((result) => {
+        const user = result.user;
+        if (user) {
+          toast.success("Logged in with Google!");
+        }
+        return result;
+      })
+      .catch((error) => {
+        toast.error("Failed to log in with Google: " + error.message);
+        throw error;
+      });
+  };
+  
   const logInWithGithub = () => {
-    signInWithPopup(auth, githubProvider)
-    .then((result) => {
-      toast.success("Logged in with GitHub!");
-      return result;
-    }) .catch((error) => {
-      toast.error("Failed to log in with GitHub: " + error.message);
-    });
+    return signInWithPopup(auth, githubProvider)
+      .then((result) => {
+        toast.success("Logged in with GitHub!");
+        return result;
+      }) .catch((error) => {
+        toast.error("Failed to log in with GitHub: " + error.message);
+        throw error;
+      });
   }
 
   const userLogin = (email, password) => {
     setLoading(true);
-    return signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password)
     .then((res) => {
       toast.success("Logged in successfully!");
       return res;
@@ -53,7 +59,7 @@ const AuthProvider = ({ children }) => {
 
   const logOut = () => {
     setLoading(true);
-    return signOut(auth)
+    signOut(auth)
     .then(() => {
       toast.success("Logged out successfully!");
     }) .catch((err) => {
@@ -63,7 +69,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const updateUserProfile = (updatedData) => {
-    return updateCurrentUser(auth.currentUser, updatedData)
+    updateCurrentUser(auth.currentUser, updatedData)
     .then(() => {
       toast.success("Profile updated successfully!");
     }) .catch((error) => {

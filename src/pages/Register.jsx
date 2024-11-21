@@ -5,12 +5,18 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import { createUserWithEmailAndPassword, getAuth, updateProfile } from "firebase/auth";
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [ error, setError ] = useState([]);
   const navigate = useNavigate();
   const { createNewUser, setUser, updateUserProfile, logInWithGoogle, logInWithGithub } = useContext(AuthContext);
   const auth = getAuth();
+
+  const validatePassword = (password) => {
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    return passwordRegex.test(password);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,42 +30,24 @@ const Register = () => {
       setError({ ...error, name: "Name must be more than 5 characters long." });
       return;
     }
-    if (password.length < 6) {
-      setError({ ...error, password: "Password must be at least 6 characters." });
+    if (!validatePassword(password)) {
+      toast.error("Password must have at least one uppercase, one lowercase letter, and be at least 6 characters long.");
       return;
+    } else {
+      toast.success("Register in successfully!")
     }
 
-    // createNewUser(email, password)
-    // .then((result) => {
-    //   const newUser = result.user;
-    //   setUser(newUser)
-    //   updateUserProfile({ displayName: name, photoURL: photo })
-    //   .then(() => {
-    //     navigate("/")
-    //     console.log("Profile updated successfully!");
-    //   })
-    //   .catch((error) => {
-    //     console.error("Error updating profile: ", error);
-    //   });
-    // })
-    // .catch((err) => {
-    //   const errorCode = err.code;
-    //   setError({ ...error, firebase: handleErrorMessage(errorCode) });
-    // });
-
-    // Create user with email and password
     createUserWithEmailAndPassword(auth, email, password)
     .then((result) => {
       const user = result.user;
 
-      // Update user profile (display name and photo URL)
       updateProfile(user, {
         displayName: name,
         photoURL: photo,
       })
       .then(() => {
         console.log("User profile updated!");
-        navigate("/");  // Redirect to home or another page
+        navigate("/");
       })
       .catch((error) => {
         console.error("Error updating user profile:", error.message);
