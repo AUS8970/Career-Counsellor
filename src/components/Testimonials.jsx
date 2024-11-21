@@ -10,35 +10,35 @@ const testimonials = [
     id: 1,
     name: "John Doe",
     designation: "CEO, TechWorld",
-    image: "../../src/assets/T1.jpeg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/510RkTM/T1.jpg",
     feedback: "This platform has completely transformed how we operate. Its user-friendly interface allows even those with minimal technical knowledge to make the most of it. The integration with other tools is seamless, saving our team time and effort. The automation features have significantly reduced manual work, allowing us to focus on more strategic tasks. Additionally, customer support is exceptional — always quick to respond and provide helpful solutions. It has helped streamline our business processes, making our work more efficient. We've seen a notable increase in productivity, and I can't recommend it enough for businesses looking to optimize their workflows and improve overall performance.",
   },
   {
     id: 2,
     name: "Jane Smith",
     designation: "Marketing Head, BrightFuture Co.",
-    image: "../../src/assets/T2.jpeg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/DtN28sF/T2.jpg",
     feedback: "As a marketing professional, finding tools that are both powerful and easy to use is rare. This platform offers in-depth analytics, helping us understand our customer base and improve our campaigns. The customization options are also a huge plus — we can tailor it to our specific needs. The platform’s ability to scale with our growth ensures it remains a valuable asset, no matter how big our operations get. Plus, the support team is always available to assist with any questions or issues, making the whole experience seamless. It's become an essential tool in our marketing strategy.",
   },
   {
     id: 3,
     name: "Michael Brown",
     designation: "Freelance Designer",
-    image: "../../src/assets/T3.jpeg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/7N962hy/T3.jpg",
     feedback: "Working as a freelancer, I need tools that are efficient and affordable. This platform has been a game-changer. Its simplicity and functionality allow me to complete projects faster and with higher quality. It integrates well with my existing tools, and the support is outstanding whenever I need assistance. I now spend less time managing tasks and more time focusing on my creative work. If you're a freelancer looking to streamline your workflow, I highly recommend this platform.",
   },
   {
     id: 4,
     name: "Emily Davis",
     designation: "Product Manager, Startup Inc.",
-    image: "../../src/assets/T4.jpeg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/BnwC5zz/T4.jpg",
     feedback: "Our team’s productivity has improved drastically since using this platform. The interface is intuitive, and the collaboration features are ideal for teams looking to scale quickly. We can now track progress in real-time, and the ability to automate repetitive tasks has saved us valuable time. The support team is also incredibly responsive, always ready to assist with any technical challenges. This platform has truly become an essential tool for our growing business." ,
   },
   {
     id: 5,
     name: "David Wilson",
     designation: "Software Developer",
-    image: "../../src/assets/T5.jpeg", // Replace with actual image URL
+    image: "https://i.ibb.co.com/GPzwMvJ/T5.jpg",
     feedback: "I’ve had a fantastic experience using this platform. The user interface is clean and easy to navigate, and the integration with existing systems was effortless. I particularly love the powerful features that are simple to use, saving me both time and effort. The platform has improved how my team collaborates and manages projects, allowing us to stay on track and meet deadlines consistently. The support team is always there to help, and their timely responses make the entire experience seamless. Highly recommended for anyone looking to improve efficiency and organization in their workflow.",
   },
 ];

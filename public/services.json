@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Career Counseling Sessions",
-    "image": "../../src/assets/S1-2.jpeg",
+    "image": "https://i.ibb.co.com/Cs4pCB0/S1-2.jpg",
     "category": "Online",
     "price": "$50",
     "counselor": "Dr. Emily Carter",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "name": "Resume Review",
-    "image": "../../src/assets/S2.jpeg",
+    "image": "https://i.ibb.co.com/wNLBcfK/S2.jpg",
     "category": "Offline",
     "price": "$30",
     "counselor": "Mr. John Davis",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "name": "Skill Development Workshop",
-    "image": "../../src/assets/S3.jpeg",
+    "image": "https://i.ibb.co.com/D9q8wVX/S3.jpg",
     "category": "Group Session",
     "price": "$100",
     "counselor": "Ms. Sarah Johnson",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "name": "Mock Interviews",
-    "image": "../../src/assets/S4.jpeg",
+    "image": "https://i.ibb.co.com/8BCm0NJ/S4.jpg",
     "category": "Online",
     "price": "$25",
     "counselor": "Mr. Adam Smith",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "name": "Leadership Training",
-    "image": "../../src/assets/S5.jpeg",
+    "image": "https://i.ibb.co.com/r5zYr51/S5.jpg",
     "category": "Offline",
     "price": "$120",
     "counselor": "Dr. Laura Green",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "name": "Time Management Strategies",
-    "image": "../../src/assets/S6.jpeg",
+    "image": "https://i.ibb.co.com/mGSQchQ/S6.jpg",
     "category": "Online",
     "price": "$20",
     "counselor": "Mr. Mark Brown",

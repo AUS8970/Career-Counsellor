@@ -6,19 +6,19 @@ const Blogs = () => {
       id: 1,
       title: "Top 10 Skills Employers Look For",
       snippet: "Discover the skills that can make you stand out in a competitive job market.",
-      image: "../../src/assets/A1.jpeg",
+      image: "https://i.ibb.co.com/pwvwtHP/A1.jpg",
     },
     {
       id: 2,
       title: "How to Ace Your Next Job Interview",
       snippet: "Learn tips and tricks to leave a lasting impression on interviewers.",
-      image: "../../src/assets/A2.jpeg",
+      image: "https://i.ibb.co.com/bX56zqq/A2.jpg",
     },
     {
       id: 3,
       title: "Balancing Work and Life Effectively",
       snippet: "Explore strategies to maintain a healthy work-life balance.",
-      image: "../../src/assets/A3.jpeg",
+      image: "https://i.ibb.co.com/LRBmP2Y/A3.jpg",
     },
   ];
 

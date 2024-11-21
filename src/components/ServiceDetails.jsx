@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import Navbar from "./Navber";
-import Footer from "./Footer";
 import { RiAccountCircleFill } from "react-icons/ri";
 
 const ServiceDetails = () => {

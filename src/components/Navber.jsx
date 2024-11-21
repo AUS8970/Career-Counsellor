@@ -23,7 +23,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex gap-2 btn btn-ghost text-xl">
-            <img className="w-10" src="../../src/assets/CC.png" alt="" />
+            <img className="w-10" src="https://i.ibb.co.com/RTZDh9y/CC.png" alt="" />
             <Link to="/" className="text-xl font-bold"> Career Counsellor </Link>
           </div>
         </div>

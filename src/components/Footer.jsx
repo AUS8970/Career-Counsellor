@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='bg-[#0B3169] text-white'>
       <div className="flex flex-col md:flex-row gap-6 justify-between items-center w-11/12 mx-auto py-8 text-center md:text-left">
         <div className="flex flex-col gap-4">
-          <img className="w-40" src="../../src/assets/CC.png" alt="" />
+          <img className="w-40" src="https://i.ibb.co.com/RTZDh9y/CC.png" alt="" />
           <Link to="/" className="text-xl font-bold"> Career Counsellor </Link>
         </div>
         <div className="flex flex-col">
