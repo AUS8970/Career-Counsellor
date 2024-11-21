@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   return (
-    // bg-[#0B3169] bg-blue-900 bg-[#0073A5]
     <div className="bg-[#0B3169] text-white">
       <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start ">
@@ -22,41 +21,40 @@ const Navbar = () => {
               <Link to="/profile" className="text-white hover:text-gray-300 transition-colors bg-blue-900 p-2 rounded-lg"> My Profile</Link>
             </ul>
           </div>
-          <div className="flex gap-2 btn btn-ghost text-xl">
+          <Link to="/" className="flex gap-2 btn btn-ghost text-xl">
             <img className="w-10" src="https://i.ibb.co.com/RTZDh9y/CC.png" alt="" />
-            <Link to="/" className="text-xl font-bold"> Career Counsellor </Link>
-          </div>
+            <h2 className="text-xl font-bold"> Career Counsellor </h2>
+          </Link>
         </div>
         <nav className="navbar-center gap-6 hidden lg:flex">
-          <Link to="/" className="text-white hover:text-gray-300 transition-colors"> Home </Link>
-          <Link to="/services" className="text-white hover:text-gray-300 transition-colors"> Services </Link>
-          <Link to="/profile" className="text-white hover:text-gray-300 transition-colors"> My Profile</Link>
+          <NavLink to="/" className="text-white hover:text-gray-300 transition-colors"> Home </NavLink>
+          <NavLink to="/services" className="text-white hover:text-gray-300 transition-colors"> Services </NavLink>
+          <NavLink to="/profile" className="text-white hover:text-gray-300 transition-colors"> My Profile</NavLink>
         </nav>
         <div className="navbar-end">
           {user ? (
             <div className="flex gap-2">
-              <div className="flex items-center gap-4 relative group">
-                {/* <div className="relative">
-                  <img src={user.photoURL} alt="User" className="w-8 h-8 rounded-full cursor-pointer"/>
-                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 -mb-2 hidden group-hover:flex items-center bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg">
-                    {user.displayName}
-                  </div>
-                </div> */}
+              <div className="flex items-center gap-4 group">
                 <button onClick={logOut} className="btn bg-blue-900 hover:bg-blue-800 text-white border-none"> Logout </button>
               </div>
               <div className="dropdown dropdown-end">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar group-hover:bg-gray-300">
                   <div className="w-10 rounded-full">
-                    <img alt="Tailwind CSS Navbar component" src={user?.photoURL} />
+                    <img alt="Profile Avatar" src={user?.photoURL || "https://via.placeholder.com/150"}/>
                   </div>
                 </div>
-                <ul tabIndex={0} className="menu menu-sm bg-[#0B3169] bg-opacity-50 gap-2 dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow items-center justify-center border-2 border-white">
-                  <img className="w-16 h-16 rounded-full" src={user?.photoURL} alt="" />
-                  <h3 className="text-center py-3">{user?.displayName}</h3>
-                  <Link to="/profile" className="btn bg-blue-900 hover:bg-blue-800 text-white border-none w-28"> My Profile</Link>
-                  {
-                    user ? <button onClick={logOut} className="btn bg-blue-900 hover:bg-blue-800 text-white border-none w-28"> Logout </button> : <Link to="/login" className="btn bg-blue-900 hover:bg-blue-800 text-white border-none w-28"> Login </Link>
-                  }
+                <ul tabIndex={0} className="menu menu-sm border-2 border-gray-400 bg-[#0B3169] bg-opacity-50 gap-2 dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <div className="flex flex-col items-center justify-center">
+                    <img className="w-16 h-16 rounded-full" src={user?.photoURL} alt="" />
+                    <div className="py-3">
+                      <h3 className="text-center font-bold pb-1">{user?.displayName}</h3>
+                      <h3 className="text-center font-normal">{user?.email}</h3>
+                    </div>
+                    <Link to="/profile" className="btn bg-blue-900 hover:bg-blue-800 text-white border-none w-28 mb-3"> My Profile</Link>
+                    {
+                      user ? <button onClick={logOut} className="btn bg-blue-900 hover:bg-blue-800 text-white border-none w-28"> Logout </button> : <Link to="/login" className="btn bg-blue-900 hover:bg-blue-800 text-white border-none w-28"> Login </Link>
+                    }
+                  </div>
                 </ul>
               </div>
             </div>
