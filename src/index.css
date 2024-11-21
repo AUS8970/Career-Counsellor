@@ -11,3 +11,10 @@
   border-radius: 5px;
   padding: 5px 10px;
 }
+
+.program {
+  background-image: url(../src/assets/downloa.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+};

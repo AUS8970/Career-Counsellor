@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 const Login = () => {
   const { userLogin, setUser, logInWithGoogle, logInWithGithub } = useContext(AuthContext);
   const [ error, setError ] = useState([]);
+  const [ email, setEmail ] = useState("")
   const location = useLocation();
   const navigate = useNavigate();
   const emailRef = useRef();
@@ -62,15 +63,8 @@ const Login = () => {
   }
 
   const handleForgotPassword = () => {
-    const email = emailRef.current.value;
-    if(!email){
-      console.log('Please! Provide your email')
-    } else {
-      sendPasswordResetEmail(auth, email)
-      .then(() => {
-        alert('Password reset email send, plaese chack your email.')
-      })
-    }
+    localStorage.setItem("email", email);
+    navigate("/forget-password");
   }
 
   return (
@@ -118,7 +112,8 @@ const Login = () => {
               <input
                 ref={emailRef} 
                 name="email"
-                type="email" 
+                type="email"
+                onChange={(e) => setEmail(e.target.value)} 
                 placeholder="email" className="input input-bordered"
                 required />
             </div>

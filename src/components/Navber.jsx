@@ -16,9 +16,9 @@ const Navbar = () => {
               </svg>
             </div>
             <ul tabIndex={0} className="menu menu-sm bg-[#0B3169] dropdown-content rounded-box z-[1] mt-3 w-52 p-4 shadow gap-2">
-              <Link to="/" className="text-white bg-blue-900 hover:text-gray-300  transition-colors p-2 rounded-lg"> Home </Link>
-              <Link to="/services" className="text-white hover:text-gray-300 transition-colors bg-blue-900 p-2 rounded-lg"> Services </Link>
-              <Link to="/profile" className="text-white hover:text-gray-300 transition-colors bg-blue-900 p-2 rounded-lg"> My Profile</Link>
+              <NavLink to="/" className="text-white bg-blue-900 hover:text-gray-300 transition-colors p-2 rounded-lg"> Home </NavLink>
+              <NavLink to="/program" className="text-white bg-blue-900 hover:text-gray-300 transition-colors rounded-lg p-2"> Our Program </NavLink>
+              <NavLink to="/profile" className="text-white bg-blue-900 hover:text-gray-300 transition-colors p-2 rounded-lg"> My Profile </NavLink>
             </ul>
           </div>
           <Link to="/" className="flex gap-2 btn btn-ghost text-xl">
@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
         <nav className="navbar-center gap-6 hidden lg:flex">
           <NavLink to="/" className="text-white hover:text-gray-300 transition-colors"> Home </NavLink>
-          <NavLink to="/services" className="text-white hover:text-gray-300 transition-colors"> Services </NavLink>
+          <NavLink to="/program" className="text-white hover:text-gray-300 transition-colors"> Our Program </NavLink>
           <NavLink to="/profile" className="text-white hover:text-gray-300 transition-colors"> My Profile</NavLink>
         </nav>
         <div className="navbar-end">

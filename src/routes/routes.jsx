@@ -6,40 +6,10 @@ import ServiceDetails from '../components/ServiceDetails';
 import Login from '../pages/Login';
 import PrivateRoute from './PrivateRoute';
 import Register from '../pages/Register';
-import Services from '../components/Services';
 import Profile from '../components/Profile';
 import MainRoutes from './MainRoutes';
-
-// const routes = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home></Home>,
-//   },
-//   {
-//     path: "profile",
-//     element: <Profile></Profile>
-//   },
-//   {
-//     path: "services",
-//     element: <Services></Services>
-//   },
-//   {
-//     path: "/services/:id",
-//     element: <PrivateRoute> <ServiceDetails></ServiceDetails> </PrivateRoute>,
-//   },
-//   {
-//     path: "login",
-//     element: <Login></Login>
-//   },
-//   {
-//     path: "register",
-//     element: <Register></Register>
-//   },
-//   {
-//     path: "*",
-//     element: <Error></Error>  
-//   }
-// ])
+import Program from '../components/Program';
+import ForgetPassword from '../pages/ForgetPassword';
 
 const routes = createBrowserRouter([
   {
@@ -55,8 +25,8 @@ const routes = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/services",
-        element: ( <PrivateRoute> <Services /> </PrivateRoute> ),
+        path: "/program",
+        element: ( <PrivateRoute> <Program/> </PrivateRoute> ),
       },
       {
         path: "/services/:id",
@@ -66,6 +36,10 @@ const routes = createBrowserRouter([
         path: "/profile",
         element: ( <PrivateRoute> <Profile /> </PrivateRoute>),
       },
+      {
+        path: "forget-password",
+        element: <ForgetPassword></ForgetPassword>
+      }, 
       {
         path: "/login",
         element: <Login />,

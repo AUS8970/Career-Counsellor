@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
 import Blogs from '../components/Blogs';
 import Header from '../components/Header';
-import Services from '../components/Servicess';
+import Services from '../components/Services';
 
 const Home = () => {
   return (
