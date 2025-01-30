@@ -63,7 +63,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-blue-900 text-white py-6 shadow-lg">
+    <header className="bg-white text-cyan-700 py-6 shadow-lg">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
         <div className="text-center w-10/12 mx-auto py-32 flex flex-col gap-4">
           <h1 className="text-6xl font-font uppercase font-extrabold">
@@ -73,7 +73,7 @@ const Header = () => {
             From personalized career advice to skill development workshops, we provide the tools and support you need to achieve your dreams and succeed in the competitive job market.
           </p>
           <div className="mt-6">
-            <Link to="/services" className="bg-lime-400 text-white px-6 py-3 rounded-md hover:bg-lime-500 transition-all text-lg font-semibold"> Explore Services </Link>
+            <Link to="/services" className=" bg-cyan-700 text-white px-6 py-3 rounded-md hover:bg-cyan-600 transition-all text-lg font-semibold"> Explore Services </Link>
           </div>
         </div>
       </div>

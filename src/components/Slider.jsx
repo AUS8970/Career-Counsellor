@@ -22,6 +22,10 @@ const Slider = () => {
     },
   ];
 
+  const navigation ={
+    color: 'white'
+  }
+
   return (
     <div className="">
       <Swiper
@@ -35,12 +39,11 @@ const Slider = () => {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div className="relative w-full h-full bg-cover bg-center" 
-            // style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-[#0B3169] flex flex-col items-center justify-center text-white p-4">
+              <div className="absolute inset-0 bg-cyan-700 text-white flex flex-col items-center justify-center p-4">
                 <div className="w-2/4 text-center">
-                  <h2 className="text-5xl mb-5 font-bold font-font">{slide.title}</h2>
-                  <p className="mt-2 text-sm font-poppins">{slide.description}</p>
+                  <h2 className="text-5xl mb-5 font-bold font-font"> {slide.title} </h2>
+                  <p className="mt-2 text-sm font-poppins"> {slide.description} </p>
                 </div>
               </div>
             </div>

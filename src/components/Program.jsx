@@ -18,7 +18,7 @@ const Program = () => {
         <title> Our Program </title>
       </Helmet>
       <div className="container mx-auto flex flex-col md:flex-row gap-10 items-center justify-between py-20">
-        <img className="w-80" src="../../src/assets/downlo.jpeg" alt="" />
+        <img className="w-80" src="https://i.ibb.co.com/1XzWcrQ/downlo.jpg" alt="" />
         <div className="flex flex-col items-center md:items-end gap-5 md:gap-20">
           <div className="text-center md:text-right space-y-3">
             <h2 className="text-5xl font-extrabold font-font text-[#0B3169]"> Career Counselling Program </h2>
@@ -53,7 +53,7 @@ const Program = () => {
             <button className="bg-lime-500 text-white px-5 py-2 rounded-full"> Know Your Score </button>
           </div>
           <div className="w-full lg:w-2/3">
-            <img src="../../src/assets/p-score.svg" alt="" />
+            <img src="https://i.ibb.co.com/mhYg9XQ/DD.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Program = () => {
           <p className="text-center"> Learn from the experts in the Career Counselling field </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-10 container w-2/3 mx-auto">
-          <img className="" src="../../src/assets/rakhi-toshniwal.jpg" alt="" />
+          <img className="" src="https://i.ibb.co.com/zFMQR1x/rakhi-toshniwal.jpg" alt="" />
           <div className="text-center lg:text-left">
             <div className="pb-3">
               <h2 className="text-xl font-bold"> Rakhi Toshniwal </h2>
@@ -73,7 +73,7 @@ const Program = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-10 container w-2/3 mx-auto">
-          <img className="" src="../../src/assets/imgpsh_fullsize_anim.jpeg" alt="" />
+          <img className="" src="https://i.ibb.co.com/qm8gY0x/imgpsh-fullsize-anim.jpg" alt="" />
           <div className="text-center lg:text-left">
             <div className="pb-3">
               <h2 className="text-xl font-bold"> Dr. Shanell Leggins </h2>
